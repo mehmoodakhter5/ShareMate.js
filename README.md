@@ -7,20 +7,17 @@ ShareMate is an open-source JavaScript library that allows users to embed social
 - **Cross-Browser**: Works on all major browsers.
 - **Customizable**: Easily customize the appearance and behavior of the sharing buttons.
 - **Lightweight**: Minimal footprint for fast loading times.
-- **User-Friendly**: Simple and intuitive API.
+- **User-Friendly**: Simple and easy
 
 ## Installation
 
-### npm
 
-```sh
-npm install sharemate
-```
 
 ### CDN
 
 ```html
-<script src="https://cdn.example.com/sharemate.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mehmoodakhter5/ShareMate.js@latest/lib/sharemate.css">
+<script src="https://cdn.jsdelivr.net/gh/mehmoodakhter5/ShareMate.js@latest/lib/sharemate.js"></script>
 ```
 
 ## Usage
