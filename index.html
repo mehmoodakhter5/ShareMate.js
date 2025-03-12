@@ -1,0 +1,24 @@
+<html>
+    <link rel="stylesheet" href="lib/sharemate.css">
+</html>
+<div id="share-buttons">
+<div id="facebook"></div>
+<div id="twitter"></div>
+<div id="linkedin"></div>
+<div id="whatsapp"></div>
+<div id="telegram"></div>
+<div id="email"></div>
+<div id="copy"></div>
+<div id="viber"></div>
+</div>
+<script src="lib/sharemate.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const url = window.location.href, text = "Check this out!";
+    ["facebook", "twitter", "linkedin", "whatsapp", "telegram", "email", "copy",'viber'].forEach(platform => {
+        const container = document.getElementById(platform);
+        if (container) createShareButton(platform, url, text, `#${platform}`);
+    });
+});
+
+</script>

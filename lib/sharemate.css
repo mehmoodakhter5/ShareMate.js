@@ -1,0 +1,56 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+.share-btn {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.share-btn i {
+    font-size: 20px;
+}
+
+.share-btn:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+.share-btn:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+}
+
+/* Different Colors for Each Button */
+.share-facebook { background: #3b5998; }
+.share-twitter { background: #1da1f2; }
+.share-linkedin { background: #0077b5; }
+.share-whatsapp { background: #25d366; }
+.share-telegram { background: #0088cc; }
+.share-email { background: #ea4335; }
+.share-copy { background: #6c757d; }
